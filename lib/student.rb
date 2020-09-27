@@ -86,6 +86,7 @@ class Student
        WHERE grade = 10 
        LIMIT ?
     SQL
+    pry.binding
     DB[:conn].execute(sql, x)
   end
   
