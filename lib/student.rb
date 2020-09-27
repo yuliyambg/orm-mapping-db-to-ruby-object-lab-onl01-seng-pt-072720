@@ -88,7 +88,7 @@ class Student
     SQL
     a = DB[:conn].execute(sql, x)
     puts "-------"
-    puts a
+    puts a[0]
     puts "-------"
     a
   end
