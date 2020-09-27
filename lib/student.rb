@@ -86,7 +86,7 @@ class Student
        WHERE grade = 10 
        LIMIT ?
     SQL
-    result = DB[:conn].execute(sql, x)
+    DB[:conn].execute(sql, x)
   end
   
   def save
