@@ -1,4 +1,3 @@
-require 'debugger'
 class Student
   attr_accessor :id, :name, :grade
 
@@ -87,8 +86,11 @@ class Student
        WHERE grade = 10 
        LIMIT ?
     SQL
-    debugger
-    DB[:conn].execute(sql, x)
+    a = DB[:conn].execute(sql, x)
+    puts "-------"
+    puts a
+    puts "-------"
+    a
   end
   
   def save
